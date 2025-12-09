@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Resume & Bio-data Website</title>
+
+
+<style>
+*{
+    margin:0; padding:0; box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#f4f4f9; color:#222; line-height:1.6;
+}
+header{
+    background:#111827; color:#fff; padding:15px;
+}
+nav a{
+    color:white; text-decoration:none;
+    margin-right:15px; padding:6px 12px;
+    border-radius:5px;
+}
+nav a.active, nav a:hover{
+    background:#2563eb;
+}
+.container{
+    width:90%; max-width:900px; margin:auto; padding:20px 0;
+}
+
+
+.page{ display:none; }
+.page.active{ display:block; }
+
+.card{
+    background:white; padding:20px; border-radius:10px;
+    margin-bottom:20px; border:1px solid #ddd;
+}
+
+
+table{
+    width:100%; border-collapse:collapse;
+}
+th,td{
+    border:1px solid #ddd; padding:8px;
+}
+th{ background:#eee; }
+
+
+button{
+    background:#2563eb; color:white; padding:8px 15px;
+    border:none; border-radius:5px; cursor:pointer;
+}
+button:hover{ background:#1e40af; }
+
+
+footer{
+    background:#111827; color:#fff; padding:10px; text-align:center;
+    margin-top:20px;
+}
+</style>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+
+
+<header>
+    <h2>My Portfolio Website</h2>
+    <nav>
+        <a href="#" class="nav-btn active" data-page="home">Home</a>
+        <a href="#" class="nav-btn" data-page="resume">Resume</a>
+        <a href="#" class="nav-btn" data-page="biodata">Bio-data</a>
+    </nav>
+</header>
+
+<div class="container">
+
+
+<section id="home" class="page active">
+    <div class="card">
+        <h2>Welcome to My Website</h2>
+        <p>Hello! I am a B.E 3rd year student passionate about coding, development and technology.</p>
+        <button onclick="showPage('resume')">View My Resume</button>
+    </div>
+
+    <div class="card">
+        <h3>Quick Info</h3>
+        <p><b>Name:</b> Jeevan M A</p>
+        <p><b>Course:</b> B.E Computer Science</p>
+        <p><b>Email:</b>jeevanma574@gmail.com</p>
+    </div>
+</section>
+
+
+<section id="resume" class="page">
+    <div class="card">
+        <h2>My Resume</h2>
+        <p>Email: jeevanma574@gmail.com.| Phone: +91-8762785407</p>
+    </div>
+
+    <div class="card">
+        <h3>Career Objective</h3>
+        <p>To secure a challenging role in an organization where I can learn, grow and apply my technical skills.</p>
+    </div>
+
+    <div class="card">
+        <h3>Educational Qualification</h3>
+        <table>
+            <tr>
+                <th>Course</th><th>Institution</th><th>Board</th><th>Year</th><th>Marks</th>
+            </tr>
+            <tr>
+                <td>B.E CSE</td><td>Your College</td><td>University</td><td>2023-2027</td><td>8 CGPA</td>
+            </tr>
+            <tr>
+                <td>PUC</td><td>Your PU College</td><td>State Board</td><td>2023</td><td>90%</td>
+            </tr>
+            <tr>
+                <td>SSLC</td><td>Your School</td><td>State Board</td><td>2021</td><td>85%</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>C, C++, Java, Python</li>
+            <li>HTML, CSS, JavaScript, jQuery</li>
+            <li>MySQL Database</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Projects</h3>
+        <p><b>Friend Suggestion System using DFS & BFS</b></p>
+        <p>Graph-based friend recommendation using C language.</p>
+        <br>
+        <p><b>Sports Event  Management Website</b></p>
+        <p>Basic web app for storing and viewing sports results.</p>
+        
+    </div>
+
+    <div class="card">
+        <h3>Strengths</h3>
+        <ul>
+            <li>Hardworking</li>
+            <li>Quick Learner</li>
+            <li>Good Problem Solving Skills</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Declaration</h3>
+        <p>I declare that the above information is true to the best of my knowledge.</p>
+    </div>
+</section>
+
+<section id="biodata" class="page">
+    <div class="card">
+        <h2>Bio-data</h2>
+    </div>
+
+    <div class="card">
+        <table>
+            <tr><th>Full Name</th><td>Jeevan M A</td></tr>
+            <tr><th>Father's Name</th><td>M B Anantha Murthy</td></tr>
+            <tr><th>Mother's Name</th><td>Sumithra</td></tr>
+            <tr><th>Date of Birth</th><td>04-12-2005</td></tr>
+            <tr><th>Gender</th><td>Male</td></tr>
+            <tr><th>Nationality</th><td>Indian</td></tr>
+            <tr><th>Marital Status</th><td>Unmarried</td></tr>
+            <tr><th>Languages Known</th><td>English, Hindi, Kannada</td></tr>
+            <tr><th>Hobbies</th><td>Cricket,Coding, Gaming, Reading</td></tr>
+            <tr><th>Address</th><td>Your Address, City, State</td></tr>
+            <tr><th>Contact</th><td>+91-8762785407</td></tr>
+            <tr><th>Email</th><td>jeevanma574.com</td></tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h3>Declaration</h3>
+        <p>I hereby declare that the above details are correct and true.</p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2025 Jeevan M A. All rights reserved.</p>
+</footer>
+
+<script>
+function showPage(page){
+    $(".page").removeClass("active");
+    $("#" + page).addClass("active");
+
+    $(".nav-btn").removeClass("active");
+    $('a[data-page="'+page+'"]').addClass("active");
+}
+
+$(".nav-btn").click(function(){
+    let page = $(this).data("page");
+    showPage(page);
+});
+</script>
+
+</body>
+</html>
